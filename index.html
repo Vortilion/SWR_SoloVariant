@@ -20,72 +20,140 @@
                 <h3 class="offcanvas-title maincolour" id="offcanvasLabel">
                     Settings
                 </h3>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+                <button
+                    type="button"
+                    class="btn-close text-reset"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close">
                 </button>
             </div>
             <div class="offcanvas-body">
                 <p>
-                    The settings available here allow you to modify which
-                    components / rules you want this variant to use. Changes
-                    will be made to the wording of some rules to reflect these
-                    settings.
+                    The settings available here allow you to modify which components / rules you want this variant to use. Changes
+                    will be made to the wording of some rules to reflect these settings.
                 </p>
-                <h6 class="paraseparator">General</h6>
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="chkdynamicInstructions" onclick="chkClick(this);" disabled>
-                    <label for="chkdynamicInstructions" data-bs-toggle="tooltip" data-bs-placement="right"
-                        title="By default all rules will be displayed. When toggled ON rules will display based on certain criteria, i.e: when the RB is discovered, movement & deployment rules will ONLY be displayed in relation to the RB">Dynamic
-                        Rules</label>
-                </div>
 
                 <h6 class="sidebarsubheader">
                     Rise of the Empire Expansion
-                    <span class="material-icons" style="font-size: large">dark_mode</span>
+                    <span
+                        class="swg swg-deathstar swg-2x swg-pull-right"
+                        title="Rise of the Empire">
+                    </span>
                 </h6>
                 <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="chkROTE-Units" onclick="chkClick(this);">
-                    <label for="chkROTE-Units" data-bs-toggle="tooltip" data-bs-placement="right" title="Setup deployment rules will change">
+                    <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="chkROTE-Units"
+                        role="switch"
+                        onclick="chkClick(this);">
+                    <label
+                        class="form-check-label"
+                        for="chkROTE-Units"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="right"
+                        title="Setup deployment rules will change">
                         Use Expansion Units
                     </label>
                 </div>
                 <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="chkROTE-TacticCards" onclick="chkClick(this);">
-                    <label for="chkROTE-TacticCards" data-bs-toggle="tooltip" data-bs-placement="right" title="Battle rules will change">
+                    <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="chkROTE-TacticCards"
+                        role="switch"
+                        onclick="chkClick(this);">
+                    <label
+                        class="form-check-label"
+                        for="chkROTE-TacticCards"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="right"
+                        title="Battle rules will change">
                         Use Advanced Tactic Cards
                     </label>
                 </div>
+
                 <h6 class="sidebarsubheader">
                     Variants
-                    <span class="material-icons" style="font-size: large">science</span>
                 </h6>
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="chkvar-Movement" onclick="chkClick(this);">
-                    <label for="chkvar-Movement" data-bs-toggle="tooltip" data-bs-placement="right"
-                        title="The Empire will roll a D6 to determine whether to move to RB/PRB or nearest rebel units. Movement rules will be updated to reflect this">
-                        Movement Variant
-                    </label>
-                </div>
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="chkvar-Deployment" onclick="chkClick(this);">
-                    <label for="chkvar-Deployment" data-bs-toggle="tooltip" data-bs-placement="right"
-                        title="The Empire will deploy prioritizing proximity to PRB > proximity to Rebel system (tie going to production strength) > Imperial production strength">
-                        Deployment Variant: Priority
-                    </label>
-                </div>
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="chkvar-UnPlayableMissions" onclick="chkClick(this);">
-                    <label for="chkvar-UnPlayableMissions" data-bs-toggle="tooltip" data-bs-placement="right"
-                        title="Unplayable Missions will be put at the bottom of the Initial Missions Desk and resolved at the end of the command phase. Wording in 'Play Initial Missions' section will change">
-                        Unplayable Missions Variant
-                    </label>
+                <div class="d-flex justify-content-between">
+                    <div class="form-check form-switch">
+                        <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="chkvar-Movement"
+                            role="switch"
+                            onclick="chkClick(this);">
+                        <label
+                            class="form-check-label"
+                            for="chkvar-Movement"
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="right"
+                            title="The Empire will roll a D6 to determine whether to move to RB/PRB or nearest rebel units. Movement rules will be updated to reflect this">
+                            Movement Variant
+                        </label>
+                    </div>
+                    <span class="aurekbesh" style="font-size: large">a</span>
                 </div>
 
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="chkvar-ActionCardExecution" onclick="chkClick(this);">
-                    <label for="chkvar-ActionCardExecution" data-bs-toggle="tooltip" data-bs-placement="right"
-                        title="If this variant is activated the player throws a D6 in the Assignment phase after choosing missions. The empire is only going to activate the Assigmnent Action Card for 4-6.">
-                        Assignment Action Card Variant
-                    </label>
+                <div class="d-flex justify-content-between">
+                    <div class="form-check form-switch">
+                        <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="chkvar-Deployment"
+                            role="switch"
+                            onclick="chkClick(this);">
+                        <label
+                            class="form-check-label"
+                            for="chkvar-Deployment"
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="right"
+                            title="The Empire will deploy prioritizing proximity to PRB > proximity to Rebel system (tie going to production strength) > Imperial production strength">
+                            Deployment Variant: Priority
+                        </label>
+                    </div>
+                    <span class="aurekbesh" style="font-size: large">d</span>
+                </div>
+
+                <div class="d-flex justify-content-between">
+                    <div class="form-check form-switch">
+                        <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="chkvar-UnPlayableMissions"
+                            role="switch"
+                            onclick="chkClick(this);">
+                        <label
+                            class="form-check-label"
+                            for="chkvar-UnPlayableMissions"
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="right"
+                            title="Unplayable Missions will be put at the bottom of the Initial Missions Desk and resolved at the end of the command phase. Wording in 'Play Initial Missions' section will change">
+                            Unplayable Missions Variant
+                        </label>
+                    </div>
+                    <span class="aurekbesh" style="font-size: large">s</span>
+                </div>
+
+                <div class="d-flex justify-content-between">
+                    <div class="form-check form-switch">
+                        <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="chkvar-ActionCardExecution"
+                            role="switch"
+                            onclick="chkClick(this);">
+                        <label
+                            class="form-check-label"
+                            for="chkvar-ActionCardExecution"
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="right"
+                            title="If this variant is activated the player throws a D6 in the Assignment phase after choosing missions. The empire is only going to activate the Assigmnent Action Card for 4-6.">
+                            Assignment Action Card Variant
+                        </label>
+                    </div>
+                    <span class="aurekbesh" style="font-size: large">b</span>
                 </div>
             </div>
         </div>
@@ -209,40 +277,76 @@
 
                 <ul class="nav nav-tabs nav-fill roundselector">
                     <li class="nav-item">
-                        <a class="list-group-item list-group-item-action" id="list-setup-list" data-toggle="list" data-bs-toggle="list" href="#list-setup-steps"
-                            role="tab" aria-controls="setup">
+                        <a
+                            class="list-group-item list-group-item-action active"
+                            id="list-setup-list"
+                            data-toggle="list"
+                            data-bs-toggle="list"
+                            href="#list-setup-steps"
+                            role="tab"
+                            aria-controls="setup">
                             <span class="material-icons align-middle icon-small">settings</span>
-                            <span class="d-none d-sm-inline p-1"> Setup </span></a>
+                            <span class="d-none d-sm-inline p-1">Setup</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="list-group-item list-group-item-action active" id="list-assignment-list" data-toggle="list" data-bs-toggle="list"
-                            href="#list-assigment-steps" role="tab" aria-controls="assignment">
+                        <a
+                            class="list-group-item list-group-item-action"
+                            id="list-assignment-list"
+                            data-toggle="list"
+                            data-bs-toggle="list"
+                            href="#list-assigment-steps"
+                            role="tab"
+                            aria-controls="assignment">
                             <span class="material-icons align-middle icon-small">people_alt</span>
-                            <span class="d-none d-sm-inline p-1">
-                                Assignment
-                            </span></a>
+                            <span class="d-none d-sm-inline p-1">Assignment</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="list-group-item list-group-item-action" id="list-command-list" data-toggle="list" data-bs-toggle="list" href="#list-command-steps"
-                            role="tab" aria-controls="command">
+                        <a
+                            class="list-group-item list-group-item-action"
+                            id="list-command-list"
+                            data-toggle="list"
+                            data-bs-toggle="list"
+                            href="#list-command-steps"
+                            role="tab"
+                            aria-controls="command">
                             <span class="material-icons align-middle icon-small">shield</span>
                             <span class="d-none d-sm-inline p-1"> Command </span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="list-group-item list-group-item-action" id="list-refresh-list" data-toggle="list" data-bs-toggle="list" href="#list-refresh-steps"
-                            role="tab" aria-controls="refresh">
+                        <a
+                            class="list-group-item list-group-item-action"
+                            id="list-refresh-list"
+                            data-toggle="list"
+                            data-bs-toggle="list"
+                            href="#list-refresh-steps"
+                            role="tab"
+                            aria-controls="refresh">
                             <span class="material-icons align-middle icon-small">restart_alt</span>
                             <span class="d-none d-sm-inline p-1"> Refresh </span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="list-group-item list-group-item-action" id="list-build-list" data-toggle="list" data-bs-toggle="list" href="#list-build-steps"
-                            role="tab" aria-controls="build">
+                        <a
+                            class="list-group-item list-group-item-action"
+                            id="list-build-list"
+                            data-toggle="list"
+                            data-bs-toggle="list"
+                            href="#list-build-steps"
+                            role="tab"
+                            aria-controls="build">
                             <span class="material-icons align-middle icon-small">build</span>
                             <span class="d-none d-sm-inline p-1">Build Queue</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="list-group-item list-group-item-action" id="list-remotesystems-list" data-toggle="list" data-bs-toggle="list"
-                            href="#list-remotesystems-steps" role="tab" aria-controls="remotesystems">
+                        <a
+                            class="list-group-item list-group-item-action"
+                            id="list-remotesystems-list"
+                            data-toggle="list"
+                            data-bs-toggle="list"
+                            href="#list-remotesystems-steps"
+                            role="tab"
+                            aria-controls="remotesystems">
                             <span class="material-icons align-middle icon-small">public</span>
                             <span class="d-none d-sm-inline p-1">Remote Systems</span>
 
@@ -257,99 +361,88 @@
                     <section class="py-4">
                         <div class="tab-content" id="nav-tabContent">
                             <!-- Setup Sets -->
-                            <section class="tab-pane" id="list-setup-steps" role="tabpanel" aria-labelledby="list-setup-list">
+                            <section
+                                class="tab-pane active"
+                                id="list-setup-steps"
+                                role="tabpanel"
+                                aria-labelledby="list-setup-list">
                                 <div class="callout">
                                     <h5>Setup</h5>
                                     <p>
-                                        Use the
-                                        <a class="link-danger" href="#0" data-bs-toggle="collapse" data-bs-target="#advancedsetup">Advanced Set-up</a>
-                                        from the Rules with the following
-                                        changes:
+                                        Use the from the Rules with the following changes:
+                                        <span
+                                            data-bs-toggle="tooltip"
+                                            data-bs-placement="right"
+                                            class="expandall material-icons pull-right"
+                                            title="Expand/Close">
+                                            <a
+                                                class="link-danger text-decoration-none"
+                                                href="#"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target=".advancedsetup"
+                                                id="expandbtn"
+                                                onclick="expandClick(this)">
+                                                expand_circle_down
+                                            </a>
+                                        </span>
                                     </p>
                                     <div class="callout-both">
                                         <h5>Place Starting Leaders</h5>
-                                        <p class="collapse" id="advancedsetup">
-                                            Gather the four leaders that do not
-                                            have a recruit icon and places them
-                                            in the box labeled “Leader Pool”
+                                        <p class="collapse advancedsetup">
+                                            Gather the four leaders that do not have a recruit icon and places them in the box labeled "Leader Pool"
                                         </p>
                                         <strong>
                                             <p>
-                                                The Empire starts with five
-                                                Leaders. Recruit the 5th by
-                                                drawing one Action Card (keep
-                                                drawing until the Empire
+                                                The Empire starts with five Leaders. Recruit the 5th by drawing one Action Card (keep drawing until the Empire
                                                 acquires the additional Leader)
                                             </p>
                                         </strong>
                                     </div>
-                                    <div class="callout collapse" id="advancedsetup">
+                                    <div class="callout collapse advancedsetup">
                                         <h5>Prepare Time Track</h5>
                                         <p>
-                                            Then place the time marker on space
-                                            “1” of the track and the reputation
-                                            marker on space “14” of the track
+                                            Then place the time marker on space "1" of the track and the reputation marker on space "14" of the track
                                         </p>
                                     </div>
                                     <div class="callout-rebel">
                                         <h5>Prepare Objective Deck</h5>
-                                        <p class="collapse" id="advancedsetup">
-                                            Sort the objective cards into three
-                                            piles based on the number shown on
-                                            the card back (I, II, or III)
+                                        <p class="collapse advancedsetup">
+                                            Sort the objective cards into three piles based on the number shown on the card back (I, II, or III)
                                         </p>
                                         <strong>
                                             <p>
-                                                Remove the “Heart of the Empire”
-                                                (Level II) Objective card
+                                                Remove the "Heart of the Empire" (Level II) Objective card
                                             </p>
                                         </strong>
-                                        <p class="collapse" id="advancedsetup">
-                                            Draw one card from the objective
-                                            deck
+                                        <p class="collapse advancedsetup">
+                                            Draw one card from the objective deck
                                         </p>
                                     </div>
-                                    <div class="callout-both collapse" id="advancedsetup">
+                                    <div class="callout-both collapse advancedsetup">
                                         <h5>Prepare Action Decks</h5>
                                         <p>
-                                            Gather all action cards that have a
-                                            recruit icon and shuffle them to
-                                            create two action decks. Place them
-                                            facedown next to each faction sheet
-                                            on the side labeled “Action Deck.”
+                                            Gather all action cards that have a recruit icon and shuffle them to create two action decks. Place them facedown next to each faction sheet
+                                            on the side labeled "Action Deck"
                                         </p>
                                     </div>
                                     <div class="callout-both">
                                         <h5>Prepare Mission Cards</h5>
-                                        <div class="callout-both collapse" id="advancedsetup">
+                                        <div class="callout-both collapse advancedsetup">
                                             <p>
-                                                Starting Missions: Starting
-                                                mission cards are identified by
-                                                a curved arrow at the bottom of
-                                                the card. For both sides take
-                                                four starting mission cards and
-                                                set them aside.
+                                                Starting Missions: Starting mission cards are identified by a curved arrow at the bottom of the card. For both sides take
+                                                four starting mission cards and set them aside.
                                             </p>
                                         </div>
-                                        <div class="callout-both collapse" id="advancedsetup">
+                                        <div class="callout-both collapse advancedsetup">
                                             <p>
-                                                Remaining Missions: For both
-                                                sides take the remaining mission
-                                                cards and shuffles them to
-                                                create the mission deck. Place
-                                                it facedown next to each faction
-                                                sheet on the side labeled
-                                                “Mission Deck.”
+                                                Remaining Missions: For both sides take the remaining mission cards and shuffles them to create the mission deck. Place
+                                                it facedown next to each faction sheet on the side labeled "Mission Deck".
                                             </p>
                                         </div>
                                         <div class="callout-empire">
                                             <p>
-                                                Shuffle one of each of the five
-                                                different
-                                                <strong>Project</strong> cards
-                                                into the
-                                                <em>Empire’s Main Missions
-                                                    Deck.</em>
+                                                Shuffle one of each of the five different <strong>Project</strong> cards into the
+                                                <em>Empire's Main Missions Deck.</em>
                                             </p>
                                         </div>
                                     </div>
@@ -357,57 +450,44 @@
                                         <h5>
                                             Place Starting Units and Loyalty
                                         </h5>
-                                        <div class="callout collapse" id="advancedsetup">
+                                        <div class="callout collapse advancedsetup">
                                             <h5>Loyalty</h5>
                                             <p>
-                                                Shuffle the probe deck and
-                                                reveal cards from the top of the
-                                                deck until three Rebel systems
-                                                and five Imperial systems have
+                                                Shuffle the probe deck and reveal cards from the top of the
+                                                deck until three Rebel systems and five Imperial systems have
                                                 been revealed
                                             </p>
                                             <p>
-                                                Place a Rebel loyalty marker in
-                                                each of the three Rebel systems.
-                                                Place a subjugation marker in
-                                                the first two Imperial systems
-                                                drawn and an Imperial loyalty
-                                                marker in each of the other
+                                                Place a Rebel loyalty marker in each of the three Rebel systems.
+                                                Place a subjugation marker in the first two Imperial systems
+                                                drawn and an Imperial loyalty marker in each of the other
                                                 three Imperial systems drawn
                                             </p>
                                             <p>
-                                                Return the five Imperial probe
-                                                cards to the game box. Then
-                                                shuffle all other probe cards
-                                                back into the probe deck
+                                                Return the five Imperial probe cards to the game box. Then
+                                                shuffle all other probe cards back into the probe deck
                                             </p>
                                         </div>
 
                                         <div class="callout-empire">
                                             <h5>Empire Deployment</h5>
                                             <p>
-                                                Deploy the Empire Units as
-                                                follows (use
-                                                <a class="link-danger d6button" href="#" type="button">D6</a>, as needed):
+                                                Deploy the Empire Units as follows (use
+                                                <strong><a class="link-danger d6button" href="#" type="button">D6</a></strong>, as needed):
                                             </p>
                                             <ul id="Base-Setup">
                                                 <li>
-                                                    2 TIE Fighters & 2
-                                                    Stormtroopers in each of the
+                                                    2 TIE Fighters & 2 Stormtroopers in each of the
                                                     initial six Systems
                                                 </li>
                                                 <li>
-                                                    Randomly deploy 3 Star
-                                                    Destroyers in 3 separate
-                                                    Systems (1 each); deploy 3
-                                                    Assault Carriers in the
+                                                    Randomly deploy 3 Star Destroyers in 3 separate
+                                                    Systems (1 each); deploy 3 Assault Carriers in the
                                                     remaining 3 Systems
                                                 </li>
                                                 <li>
-                                                    Randomly deploy 1 AT-AT to a
-                                                    System; then deploy 5 AT-STs
-                                                    (1 per System) in the
-                                                    remaining 5 Systems
+                                                    Randomly deploy 1 AT-AT to a System; then deploy 5 AT-STs
+                                                    (1 per System) in the remaining 5 Systems
                                                 </li>
                                                 <li>
                                                     Randomly deploy the Death
@@ -417,66 +497,52 @@
                                             <div class="d-none variant" id="ROTE-Setup">
                                                 <div>
                                                     <p>
-                                                        Place a Death Star on
-                                                        space 3 of the build
-                                                        queue and the
-                                                        in-construction Death
-                                                        Star, a subjugation
-                                                        marker, 4 TIE Fighters
-                                                        and 1 Stormtrooper in
-                                                        one of the 6 neutral
-                                                        single-triangle resource
-                                                        systems chosen at random
-                                                        from: Felucia, Kessel,
-                                                        Malastare, Alderaan,
-                                                        Rodia or Ryloth, return
-                                                        its probe card to the
+                                                        Place a Death Star on space 3 of the build
+                                                        queue and the in-construction Death
+                                                        Star, a subjugation marker, 4 TIE Fighters
+                                                        and 1 Stormtrooper in one of the 6 neutral
+                                                        single-triangle resource systems chosen at random
+                                                        from: Felucia, Kessel, Malastare, Alderaan,
+                                                        Rodia or Ryloth, return its probe card to the
                                                         game box
                                                     </p>
+
                                                     <ul>
                                                         <li>
-                                                            2 Stormtroopers in
-                                                            each of the 6
+                                                            2 Stormtroopers in each of the 6 Systems
+                                                        </li>
+                                                        <li>
+                                                            Randomly deploy 3 Star Destroyers in 3
+                                                            separate Systems (1 each); deploy 3
+                                                            Assault Carriers in the remaining 3
                                                             Systems
                                                         </li>
                                                         <li>
-                                                            Randomly deploy 3
-                                                            Star Destroyers in 3
-                                                            separate Systems (1
-                                                            each); deploy 3
-                                                            Assault Carriers in
-                                                            the remaining 3
-                                                            Systems
+                                                            Place a TIE Fighter in each system
+                                                            except Coruscant, then randomly add
+                                                            TIE striker to 2 of those five and a TIE
+                                                            Fighter to the remaining 3.
                                                         </li>
                                                         <li>
-                                                            Place a TIE Fighter
-                                                            in each system
-                                                            except Coruscant,
-                                                            then randomly add
-                                                            TIE striker to 2 of
-                                                            those five and a TIE
-                                                            Fighter to the
-                                                            remaining 3.
-                                                        </li>
-                                                        <li>
-                                                            Randomly place 2
-                                                            Assault Tanks and 4
-                                                            AT-STs in each of
-                                                            the 6 systems (1 per
+                                                            Randomly place 2 Assault Tanks and 4
+                                                            AT-STs in each of the 6 systems (1 per
                                                             system)
                                                         </li>
                                                         <li>
-                                                            Randomly place an
-                                                            AT-AT in one of the
-                                                            5 systems - not
-                                                            Coruscant
+                                                            Randomly place an AT-AT in one of the
+                                                            5 systems - not Coruscant
                                                         </li>
                                                     </ul>
                                                 </div>
-                                                <span class="material-icons">dark_mode</span>
+                                                <span
+                                                    class="swg swg-deathstar swg-2x swg-pull-right"
+                                                    data-bs-toggle="tooltip"
+                                                    data-bs-placement="right"
+                                                    title="Rise of the Empire">
+                                                </span>
                                             </div>
                                         </div>
-                                        <div class="callout-rebel collapse" id="advancedsetup">
+                                        <div class="callout-rebel collapse advancedsetup">
                                             <h5>Rebel Deployment</h5>
                                             <p>The Rebel player receives:</p>
                                             <div id="Base-Setup" style="display: flex">
@@ -508,46 +574,41 @@
                                                     <li>2 Airspeeders</li>
                                                     <li>1 Rebel Vanguard</li>
                                                 </ul>
-                                                <span class="material-icons">dark_mode</span>
+                                                <span
+                                                    class="swg swg-deathstar swg-2x swg-pull-right"
+                                                    data-bs-toggle="tooltip"
+                                                    data-bs-placement="right"
+                                                    title="Rise of the Empire">
+                                                </span>
                                             </div>
                                             <p>
-                                                These units can be placed in the
-                                                “Rebel Base” space of the game
-                                                board and/or in any one Rebel or
-                                                neutral system
+                                                These units can be placed in the "Rebel Base" space of the game
+                                                board and/or in any one Rebel or neutral system
                                             </p>
                                         </div>
-                                        <div class="callout-both collapse" id="advancedsetup">
+                                        <div class="callout-both collapse advancedsetup">
                                             <h5>Action Cards</h5>
                                             <p>
-                                                For both sides draw two random
-                                                starting action cards (i.e., the
-                                                action cards without a recruit
-                                                icon on them). These cards
-                                                provide special, once-per-game
-                                                abilities
+                                                For both sides draw two random starting action cards (i.e., the
+                                                action cards without a recruit icon on them). These cards
+                                                provide special, once-per-game abilities
                                             </p>
                                         </div>
                                     </div>
                                     <div class="callout-rebel">
                                         <h5>Rebel Base</h5>
                                         <p>
-                                            The Solo Player chooses the Rebel
-                                            Base’s location from among the 8
-                                            Remote Systems, after placing all
-                                            Starting Units and Loyalty Markers.
-                                            The Empire knows it is located in
-                                            one of these Systems (acquired vital
-                                            information through its intelligence
-                                            networks), and will aggressively
+                                            The Solo Player chooses the Rebel Base's location from among the 8
+                                            Remote Systems, after placing all Starting Units and Loyalty Markers.
+                                            The Empire knows it is located in one of these Systems (acquired vital
+                                            information through its intelligence networks), and will aggressively
                                             search for it
                                         </p>
                                     </div>
-                                    <div class="callout-rebel collapse" id="advancedsetup">
+                                    <div class="callout-rebel collapse advancedsetup">
                                         <h5>Draw Starting Hand</h5>
                                         <p>
-                                            Take the four starting missions and
-                                            draw two cards from the mission deck
+                                            Take the four starting missions and draw two cards from the mission deck
                                             to create your starting hand
                                         </p>
                                     </div>
@@ -555,7 +616,7 @@
                             </section>
 
                             <!-- Assignment Steps-->
-                            <section class="tab-pane active" id="list-assigment-steps" role="tabpanel" aria-labelledby="list-assignment-list">
+                            <section class="tab-pane" id="list-assigment-steps" role="tabpanel" aria-labelledby="list-assignment-list">
                                 <div class="callout-rebel">
                                     <h5>Assign Leaders to Missions</h5>
                                     <p>
@@ -567,10 +628,8 @@
                                     <h5>Create Mission Deck</h5>
                                     <div id="createmissiondeck">
                                         <p>
-                                            Draw a specified number of Missions
-                                            (see Missions Table, below) shuffle
-                                            the drawn cards, and place them in a
-                                            facedown pile, forming the
+                                            Draw a specified number of Missions (see Missions Table, below) shuffle
+                                            the drawn cards, and place them in a facedown pile, forming the
                                             <em class="text-medium">Initial Missions Deck</em>
                                         </p>
 
@@ -583,9 +642,7 @@
                                                             Turn 1:
                                                         </div>
                                                         <div class="col">
-                                                            2 Missions (1
-                                                            Starting Mission + 1
-                                                            Main Mission)
+                                                            2 Missions (1 Starting Mission + 1 Main Mission)
                                                         </div>
                                                     </div>
                                                     <div class="row">
@@ -593,9 +650,7 @@
                                                             Turns 2-3:
                                                         </div>
                                                         <div class="col">
-                                                            3 Missions (1
-                                                            Starting Mission + 2
-                                                            Main Missions)
+                                                            3 Missions (1 Starting Mission + 2 Main Missions)
                                                         </div>
                                                     </div>
                                                     <div class="row">
@@ -603,9 +658,7 @@
                                                             Turn 4+:
                                                         </div>
                                                         <div class="col">
-                                                            4 Missions (1
-                                                            Starting Mission + 3
-                                                            Main Missions)
+                                                            4 Missions (1 Starting Mission + 3 Main Missions)
                                                         </div>
                                                     </div>
                                                     <div class="row">
@@ -613,9 +666,7 @@
                                                             Rebel Base Revealed
                                                         </div>
                                                         <div class="col">
-                                                            3 Missions (1
-                                                            Starting Mission + 2
-                                                            Main Missions)
+                                                            3 Missions (1 Starting Mission + 2 Main Missions)
                                                         </div>
                                                     </div>
                                                 </div>
@@ -627,24 +678,32 @@
                                 <div class="callout-empire">
                                     <h5>Play Action Cards</h5>
                                     <div class="d-none variant" id="var-ActionCardExecution">
-                                        <div>
+                                        <div style="padding-right: 15px;">
                                             <p>
-                                                Roll a <a class="link-danger d6button" href="#" type="button">D6</a>:
+                                                Roll a <strong><a class="link-danger d6button" href="#" type="button">D6</a></strong>:
                                             </p>
                                             <div class="d-flex">
-                                                <p>1-3:</p>
+                                                <p style="width: 30px;">1-3:</p>
                                                 <p>
                                                     The Empire does not use its Assignment Action Card
                                                 </p>
                                             </div>
                                             <div class="d-flex">
-                                                <p>4-6:</p>
+                                                <p style="width: 30px;">4-6:</p>
                                                 <p>
                                                     The Empire uses its Assignment Action Card
                                                 </p>
                                             </div>
                                         </div>
-                                        <span class="material-icons">science</span>
+                                        <span
+                                            class="aurekbesh"
+                                            style="font-size: large"
+                                            data-bs-toggle="tooltip"
+                                            data-bs-placement="right"
+                                            title="Assignment Action Card Variant"
+                                            data-bs-original-title="Assignment Action Card Variant">
+                                            b
+                                        </span>
                                     </div>
                                     <p id="Base-ActionCardExecution">
                                         The Empire plays all Action Cards designated as <strong class="text-medium">playable</strong> during the Assignment Phase
@@ -658,6 +717,21 @@
                                     <h5>Play Missions</h5>
                                     <p>
                                         Starting with the Rebel player, alternate taking turns
+                                        <span
+                                            data-bs-toggle="tooltip"
+                                            data-bs-placement="right"
+                                            class="expandall material-icons pull-right"
+                                            title="Expand/Close">
+                                            <a
+                                                class="link-danger text-decoration-none"
+                                                href="#"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target=".command"
+                                                id="expandbtn"
+                                                onclick="expandClick(this)">
+                                                expand_circle_down
+                                            </a>
+                                        </span>
                                     </p>
 
                                     <div class="callout-rebel">
@@ -669,30 +743,24 @@
                                         </p>
 
                                         <div class="callout-rebel">
-                                            <a class="text-decoration-none" href="#0" role="button" data-bs-toggle="collapse" data-bs-target="#establishnewbase">
+                                            <a
+                                                class="text-decoration-none"
+                                                href="#0"
+                                                role="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#establishnewbase">
                                                 <h5>Establishing a New Base</h5>
                                             </a>
-                                            <p class="collapse" id="establishnewbase">
-                                                The Rebels may establish a new
-                                                Base similar to the normal
-                                                procedure. First, return all
-                                                Probe cards of uncontrolled (no
-                                                Imperial Ground Units there)
-                                                Remote Systems from the Empire’s
-                                                stack to the Probe deck, and
-                                                shuffle it. Second, the Rebels
-                                                draw the usual number of cards
-                                                up to a maximum of the
-                                                difference between the Turn and
-                                                Reputation Markers, and
-                                                establish a new Base in any
-                                                Remote System drawn. Third, the
-                                                Empire returns to searching for
-                                                the Rebel Base as it did prior
-                                                to revealing the base. Finally,
-                                                place the
-                                                <em>Gather Intel</em> card back
-                                                into the Starting Missions Deck
+                                            <p class="collapse command" id="establishnewbase">
+                                                The Rebels may establish a new Base similar to the normal procedure. First, return all
+                                                Probe cards of uncontrolled (no Imperial Ground Units there) Remote Systems from the Empire's
+                                                stack to the Probe deck, and shuffle it. Second, the Rebels
+                                                draw the usual number of cards up to a maximum of the
+                                                difference between the Turn and Reputation Markers, and
+                                                establish a new Base in any Remote System drawn. Third, the
+                                                Empire returns to searching for the Rebel Base as it did prior
+                                                to revealing the base. Finally, place the
+                                                <em>Gather Intel</em> card back into the Starting Missions Deck
                                             </p>
                                         </div>
 
@@ -701,42 +769,30 @@
                                                 data-bs-target="#opposingrebelmissions">
                                                 <h5>Opposing Rebel Missions</h5>
                                             </a>
-                                            <p class="collapse" id="opposingrebelmissions">
-                                                Only if there are more Imperial
-                                                Leaders than unrevealed<em class="text-medium">
-                                                    Initial Mission
-                                                </em>
-                                                cards, the Empire may issue an
-                                                order (on a
-                                                <a class="link-danger d6button" href="#" type="button">D6</a>
-                                                result of 4+) to send their
-                                                “best” qualified Leader to
-                                                oppose a Rebel Mission. If no
-                                                Leader has matching Skill icons,
-                                                the Leader with the fewest total
-                                                number of Skill icons becomes
-                                                eligible
+                                            <p class="collapse command" id="opposingrebelmissions">
+                                                Only if there are more Imperial Leaders than unrevealed <em class="text-medium">Initial Mission</em>
+                                                cards, the Empire may issue an order (on a
+                                                <strong><a class="link-danger d6button" href="#" type="button">D6</a></strong> result of 4+) to send their
+                                                "best" qualified Leader to oppose a Rebel Mission. If no
+                                                Leader has matching Skill icons, the Leader with the fewest total
+                                                number of Skill icons becomes eligible
                                             </p>
 
-                                            <a class="text-decoration-none" href="#0" role="button" data-bs-toggle="collapse" data-bs-target="#joinabattle">
+                                            <a
+                                                class="text-decoration-none"
+                                                href="#0"
+                                                role="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#joinabattle">
                                                 <h5>Join a Battle</h5>
                                             </a>
-                                            <p class="collapse" id="joinabattle">
-                                                Only if there are more Imperial
-                                                Leaders than unrevealed<em class="text-medium">
-                                                    Initial Mission
-                                                </em>
-                                                cards, the Empire will send an
-                                                eligible Leader to join the
-                                                battle with either no Leader or
-                                                one possessing no Tactics
-                                                Value(s). Prioritize eligible
-                                                Leaders with a “Start of Combat”
-                                                Action card and either the
-                                                highest combined Tactics Values
-                                                (if both Theaters) or the
-                                                highest Tactic Value (in the
-                                                appropriate Theater)
+                                            <p class="collapse command" id="joinabattle">
+                                                Only if there are more Imperial Leaders than unrevealed <em class="text-medium">Initial Mission</em>
+                                                cards, the Empire will send an eligible Leader to join the battle with either no Leader or
+                                                one possessing no Tactics Value(s). Prioritize eligible
+                                                Leaders with a "Start of Combat" Action card and either the
+                                                highest combined Tactics Values (if both Theaters) or the
+                                                highest Tactic Value (in the appropriate Theater)
                                             </p>
                                         </div>
                                     </div>
@@ -753,80 +809,81 @@
                                             movement
                                         </p>
                                         <p>
-                                            <strong>Undertaking
-                                                <em class="text-medium">Initial Missions</em>:</strong>
-                                            Flip over the top Mission from the
-                                            deck and assign the “best” qualified
-                                            Leader (pictured Leader or the
-                                            Leader possessing the most matching
+                                            <strong>Undertaking <em class="text-medium">Initial Missions</em>:</strong>
+                                            Flip over the top Mission from the deck and assign the "best" quali"ied
+                                            Leader (pictured Leader or the Leader possessing the most matching
                                             Skill icons)
                                         </p>
                                         <p id="Base-Unplayablemissions">
-                                            If a Mission proves unplayable (no
-                                            appropriate Leader or for any
-                                            reason), select a new Mission from
-                                            the appropriate Deck and place all
-                                            unfulfilled Mission cards at the
-                                            bottom of their respective Decks
+                                            If a Mission proves unplayable (no appropriate Leader or for any
+                                            reason), select a new Mission from the appropriate Deck and place all
+                                            unfulfilled Mission cards at the bottom of their respective Decks
                                         </p>
                                         <div class="d-none variant" id="var-Unplayablemissions">
                                             <p>
-                                                If a mission cannot be performed
-                                                due to circumstances that may
-                                                change (e.g. no leaders captured
-                                                yet, Death Star hasn't moved),
-                                                put the card at the bottom of
-                                                the
+                                                If a mission cannot be performed due to circumstances that may
+                                                change (e.g. no leaders captured yet, Death Star hasn't moved),
+                                                put the card at the bottom of the
                                                 <em class="text-medium">Initial Missions</em>
-                                                Deck. Reserve the leader who
-                                                would have undertaken the
-                                                mission. Once all other
-                                                <em class="text-medium">Initial Missions</em>
-                                                and movement have taken place,
-                                                attempt to resolve any
-                                                unplayable mission(s) with
-                                                reserved leader(s). If the
-                                                mission(s) still cannot be
-                                                performed, draws a new
-                                                mission(s)
+                                                Deck. Reserve the leader who would have undertaken the
+                                                mission. Once all other <em class="text-medium">Initial Missions</em>
+                                                and movement have taken place, attempt to resolve any
+                                                unplayable mission(s) with reserved leader(s). If the
+                                                mission(s) still cannot be performed, draws a new mission(s)
                                             </p>
-                                            <span class="material-icons">science</span>
+                                            <span
+                                                class="aurekbesh"
+                                                style="font-size: large"
+                                                data-bs-toggle="tooltip"
+                                                data-bs-placement="right"
+                                                title="Unplayable Missions Variant">
+                                                s
+                                            </span>
                                         </div>
                                         <p>
                                             Select Mission locations based on
                                             either the
-                                            <a class="link-danger text-medium" href="#" data-bs-toggle="modal" data-bs-target="#carddecisionlist">Empire’s Card
+                                            <a
+                                                class="link-danger
+                                                text-medium"
+                                                href="#"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#carddecisionlist">Empire's Card
                                                 Decision Making
                                                 List</a>
                                             or the System with the
-                                            <a class="link-danger text-medium" href="#" data-bs-toggle="modal" data-bs-target="#productionvalueguide">Highest
+                                            <a
+                                                class="link-danger
+                                                text-medium"
+                                                href="#"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#productionvalueguide">Highest
                                                 Production Value</a>.
                                         </p>
 
                                         <div class="callout">
-                                            <a class="text-decoration-none" href="#0" role="button" data-bs-toggle="collapse" data-bs-target="#capturingleaders">
+                                            <a
+                                                class="text-decoration-none"
+                                                href="#0"
+                                                role="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#capturingleaders">
                                                 <h5>Capturing Leaders</h5>
                                             </a>
-                                            <p class="collapse" id="capturingleaders">
-                                                A captured Rebel Leader is
-                                                considered a Ground Unit, and
-                                                held captive by the strongest
-                                                Imperial Space Unit currently in
-                                                the System where he/she is
-                                                located
+                                            <p class="collapse command" id="capturingleaders">
+                                                A captured Rebel Leader is considered a Ground Unit, and
+                                                held captive by the strongest Imperial Space Unit currently in
+                                                the System where he/she is located
                                             </p>
 
                                             <a class="text-decoration-none" href="#0" role="button" data-bs-toggle="collapse"
                                                 data-bs-target="#acquiringprojectcards">
                                                 <h5>Acquiring Project Cards</h5>
                                             </a>
-                                            <p class="collapse" id="acquiringprojectcards">
-                                                Any Projects acquired during the
-                                                game are placed face-down
-                                                (without looking at them) beside
-                                                the Main Missions Deck, and are
-                                                placed on top of the deck after
-                                                it is reshuffled at the end of
+                                            <p class="collapse command" id="acquiringprojectcards">
+                                                Any Projects acquired during the game are placed face-down
+                                                (without looking at them) beside the Main Missions Deck, and are
+                                                placed on top of the deck after it is reshuffled at the end of
                                                 the Command Phase
                                             </p>
                                         </div>
@@ -835,240 +892,187 @@
                                 <div class="callout-empire">
                                     <h5>Activate Systems</h5>
                                     <p>
-                                        The Empire may, having undertaken all
-                                        initial Missions, use Leaders to
-                                        Activate Systems (Move Units) to the
-                                        nearest PRB(s) or Revealed Rebel Base
+                                        The Empire may, having undertaken all initial Missions, use Leaders to
+                                        Activate Systems (Move Units) to the nearest PRB(s) or Revealed Rebel Base
                                     </p>
 
                                     <div class="callout">
-                                        <a class="text-decoration-none" href="#0" role="button" data-bs-toggle="collapse" data-bs-target="#movementrules">
+                                        <a
+                                            class="text-decoration-none"
+                                            href="#0"
+                                            role="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#movementrules">
                                             <h5>Movement Rules</h5>
                                         </a>
-                                        <div class="collapse" id="movementrules">
+                                        <div class="collapse command" id="movementrules">
                                             <div class="d-none variant" id="var-movement">
-                                                <div>
+                                                <div style="padding-right: 15px;">
                                                     <p>
-                                                        Before moving, roll a
-                                                        <a class="link-danger d6button" href="#0" type="button">D6</a>
+                                                        Before moving, roll a <strong><a class="link-danger d6button" href="#0" type="button">D6</a></strong>:
                                                     </p>
                                                     <div class="d-flex">
-                                                        <p>1-3:</p>
+                                                        <p style="width: 30px;">1-3:</p>
                                                         <p>
-                                                            Move the Empire's
-                                                            Units to the closest
-                                                            system that contains
-                                                            the rebel pieces.
-                                                            Prioritize: Loyal
-                                                            Systems > largest
-                                                            fleet
+                                                            Move the Empire's Units to the closest
+                                                            system that contains the rebel pieces.
+                                                            Prioritize: Loyal Systems > largest fleet
                                                         </p>
                                                     </div>
                                                     <div class="d-flex">
-                                                        <p>4-6:</p>
+                                                        <p style="width: 30px;">4-6:</p>
                                                         <p>
-                                                            Move the Empire’s
-                                                            Units by the
-                                                            shortest possible
-                                                            route toward the
-                                                            nearest unexplored
-                                                            (Probe Card not yet
-                                                            obtained) Remote
-                                                            System (also known
-                                                            as the Possible
-                                                            Rebel Base [PRB])
-                                                            and will attack any
-                                                            rebel ships in their
-                                                            way.
+                                                            Move the Empire's Units by the
+                                                            shortest possible route toward the
+                                                            nearest unexplored (Probe Card not yet
+                                                            obtained) Remote System (also known
+                                                            as the Possible Rebel Base [PRB])
+                                                            and will attack any rebel ships in their way.
                                                         </p>
                                                     </div>
                                                 </div>
-                                                <span class="material-icons">science</span>
+                                                <span
+                                                    class="aurekbesh"
+                                                    style="font-size: large"
+                                                    data-bs-toggle="tooltip"
+                                                    data-bs-placement="right"
+                                                    title="Movement Variant"
+                                                    data-bs-original-title="Movement Variant">
+                                                    a
+                                                </span>
                                             </div>
                                             <p id="Base-movement">
-                                                Move the Empire’s Units by the
-                                                shortest possible route toward
-                                                the nearest unexplored (Probe
-                                                Card not yet obtained) Remote
-                                                System (also known as the
-                                                Possible Rebel Base [PRB]) and
-                                                will attack any rebel ships in
-                                                their way.
+                                                Move the Empire's Units by the shortest possible route toward
+                                                the nearest unexplored (Probe Card not yet obtained) Remote
+                                                System (also known as the Possible Rebel Base [PRB]) and
+                                                will attack any rebel ships in their way.
                                             </p>
                                             <p>
-                                                When moving into a System, the
-                                                Empire will move all Units from
-                                                adjacent Systems into the
-                                                Activated System, bringing along
-                                                as many Ground Units as they can
-                                                transport, prioritizing Space
+                                                When moving into a System, the Empire will move all Units from
+                                                adjacent Systems into the activated System, bringing along
+                                                as many Ground Units as they can transport, prioritizing Space
                                                 Units with the highest
                                                 <a class="link-danger text-medium" href="#" data-bs-target="#strengthguide" data-bs-toggle="modal">Strength</a>
                                                 values.
                                             </p>
                                             <p class="important">
-                                                <strong>IMPORTANT:</strong> The
-                                                Empire
-                                                <strong>must</strong> leave a
-                                                single weakest Ground Unit
-                                                behind to make a valid move. If
-                                                the fleet has been selected
-                                                (because they are closest) but
-                                                cannot leave a Ground Unit
-                                                behind, place a Leader into the
-                                                System, along with a
-                                                Stormtrooper from supply. The
-                                                fleet will then be able to move
-                                                on a later turn.
+                                                <strong>IMPORTANT:</strong> The Empire <strong>must</strong> leave a
+                                                single weakest Ground Unit behind to make a valid move. If
+                                                the fleet has been selected (because they are closest) but
+                                                cannot leave a Ground Unit behind, place a Leader into the
+                                                System, along with a Stormtrooper from supply. The
+                                                fleet will then be able to move on a later turn.
                                             </p>
                                             <p>
-                                                After a successful move - with
-                                                Ground Units - to a Remote
-                                                System, immediately obtain that
-                                                system's Probe Card (reshuffle
-                                                deck). If the Empire ever loses
-                                                its last Ground Unit stationed
-                                                on a Remote System (e.g. due to
-                                                a Combat loss), return the Probe
-                                                Card to the Probe Deck and
-                                                reshuffle.
+                                                After a successful move - with Ground Units - to a Remote
+                                                System, immediately obtain that system's Probe Card (reshuffle
+                                                deck). If the Empire ever loses its last Ground Unit stationed
+                                                on a Remote System (e.g. due to a Combat loss), return the Probe
+                                                Card to the Probe Deck and reshuffle.
                                             </p>
                                             <p>
-                                                When the difference between the
-                                                Turn and Reputation Markers is ≤
-                                                5, Imperial fleets may move
-                                                (once/turn) even if there’s a
-                                                Leader in the starting System.
-                                                The Empire will change its
-                                                movement behavior once the Rebel
-                                                Base is revealed (See Revealing
+                                                When the difference between the Turn and Reputation Markers is ≤
+                                                5, Imperial fleets may move (once/turn) even if there's a
+                                                Leader in the starting System. The Empire will change its
+                                                movement behavior once the Rebel Base is revealed (See Revealing
                                                 the Rebel Base below)
                                             </p>
                                         </div>
 
-                                        <a class="text-decoration-none" href="#0" role="button" data-bs-toggle="collapse" data-bs-target="#revealingtherebelbase">
+                                        <a
+                                            class="text-decoration-none"
+                                            href="#0"
+                                            role="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#revealingtherebelbase">
                                             <h5>Revealing the Rebel Base</h5>
                                         </a>
-                                        <div class="collapse" id="revealingtherebelbase">
+                                        <div class="collapse command" id="revealingtherebelbase">
                                             <p>
-                                                Reveal The
-                                                <strong>Rebel Base</strong> only
-                                                after the Empire has obtained
-                                                Probe Cards for the other 7
-                                                Remote Systems OR when the
-                                                Empire has any
-                                                <strong>Ground Units</strong> in
-                                                that System.
+                                                Reveal the <strong>Rebel Base</strong> only
+                                                after the Empire has obtained Probe Cards for the other 7
+                                                Remote Systems OR when the Empire has any
+                                                <strong>Ground Units</strong> in that System.
                                             </p>
                                             <p>
-                                                Once revealed, remove the
-                                                <em>Gather Intel</em> Starting
-                                                Mission from the pile (it may
-                                                return to play if the Rebels
+                                                Once revealed, remove the <em>Gather Intel</em> Starting
+                                                Mission from the pile (it may return to play if the Rebels
                                                 establish a new base).
                                             </p>
                                             <p>
-                                                Note that when the Rebel Base is
-                                                <strong>revealed</strong> and/or
-                                                when the
-                                                <strong>difference between the Turn
-                                                    and Reputation Markers is ≤
-                                                    5</strong>, Imperial fleets may move
-                                                (once/turn) even if there’s a
-                                                Leader in the starting System
-                                                (track this by, e.g., laying
-                                                down the Leader activating the
+                                                Note that when the Rebel Base is <strong>revealed</strong> and/or
+                                                when the <strong>difference between the Turn
+                                                and Reputation Markers is ≤ 5</strong>, Imperial fleets may move
+                                                (once/turn) even if there's a Leader in the starting System
+                                                (track this by, e.g., laying down the Leader activating the
                                                 System initiating the movement).
                                             </p>
                                             <p>
-                                                Also, the Empire now prioritizes
-                                                eligible Systems closest to the
-                                                Rebel Base for both the purposes
-                                                of fleet movement and deployment
-                                                of forces. When the Empire
-                                                chooses to activate a System,
-                                                calculate the difference between
-                                                the Turn and Reputation Markers.
-                                                If all fleets within this range
-                                                have been moved, shift priority
-                                                to other fleets which will
-                                                target the nearest uncontrolled
-                                                (possessing no Imperial Ground
-                                                Units) Remote Systems. When the
-                                                Empire reveals the Rebel Base,
-                                                the Empire draws 3 cards (1
-                                                Starting Mission and 2 Main
-                                                Missions) during the Assignment
+                                                Also, the Empire now prioritizes eligible Systems closest to the
+                                                Rebel Base for both the purposes of fleet movement and deployment
+                                                of forces. When the Empire chooses to activate a System,
+                                                calculate the difference between the Turn and Reputation Markers.
+                                                If all fleets within this range have been moved, shift priority
+                                                to other fleets which will target the nearest uncontrolled
+                                                (possessing no Imperial Ground Units) Remote Systems. When the
+                                                Empire reveals the Rebel Base, the Empire draws 3 cards (1
+                                                Starting Mission and 2 Main Missions) during the Assignment
                                                 Phase
                                             </p>
                                         </div>
 
-                                        <a class="text-decoration-none" href="#0" role="button" data-bs-toggle="collapse" data-bs-target="#battles">
+                                        <a
+                                            class="text-decoration-none"
+                                            href="#0"
+                                            role="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#battles">
                                             <h5>Battles</h5>
                                         </a>
-                                        <div class="collapse" id="battles">
+                                        <div class="collapse command" id="battles">
                                             <p id="Base-Battles">
-                                                While Battles will play out
-                                                normally, the Empire will not
-                                                draw/use any Tactics cards.
-                                                Additionally, follow these
+                                                While Battles will play out normally, the Empire will not
+                                                draw/use any Tactics cards. Additionally, follow these
                                                 special rules:
                                             </p>
                                             <div class="d-none variant" id="ROTE-Battles">
                                                 <p>
-                                                    While Battles will play out
-                                                    normally, the Empire will
-                                                    randomly draw one
-                                                    <strong>Advanced Tactic
-                                                        Card</strong>
-                                                    per attack. Additionally,
-                                                    follow these special rules:
+                                                    While Battles will play out normally, the Empire will
+                                                    randomly draw one <strong>Advanced Tactic Card</strong>
+                                                    per attack. Additionally, follow these special rules:
                                                 </p>
-                                                <span class="material-icons">dark_mode</span>
+                                                <span
+                                                    class="swg swg-deathstar swg-2x swg-pull-right"
+                                                    data-bs-toggle="tooltip"
+                                                    data-bs-placement="right"
+                                                    title="Rise of the Empire">
+                                                </span>
                                             </div>
                                             <ul>
                                                 <li>
-                                                    Any Special Icons rolled are
-                                                    considered “hits” vs. Rebel
-                                                    Units
+                                                    Any Special Icons rolled are considered "hits" vs. Rebel Units
                                                 </li>
                                                 <li>
-                                                    You MUST reroll up to the
-                                                    number of “hits” equal to
-                                                    the Theater-specific Tactics
-                                                    Value of the Empire’s Leader
-                                                    (starting with the “Direct
-                                                    Hit” followed by
-                                                    regular/single hits) until
-                                                    they’re all used; balance
-                                                    may carry-over to later
-                                                    rounds.<br /><em>For example: Empire's
-                                                        Leader has a tactics
-                                                        value of 2. You MUST
-                                                        ignore your first two
-                                                        <strong>hits</strong>
-                                                        and re-roll those dice.
-                                                        If you roll no hits, the
-                                                        two re-rolls will
-                                                        carry-over to the next
-                                                        attack</em>
+                                                    You MUST reroll up to the number of "hits" equal to
+                                                    the Theater-specific Tactics Value of the Empire's Leader
+                                                    (starting with the "Direct Hit" followed by
+                                                    regular/single hits) until they're all used; balance
+                                                    may carry-over to later rounds.<br /><em>For example: Empire's
+                                                    Leader has a tactics value of 2. You MUST
+                                                    ignore your first two <strong>hits</strong> and re-roll those dice.
+                                                    If you roll no hits, the two re-rolls will carry-over to the next
+                                                    attack</em>
                                                 </li>
                                                 <li>
-                                                    The Empire will assign hits
-                                                    vs. Rebel Units with the
-                                                    following priority: Ion
-                                                    Cannon, Weakest Units
-                                                    (Remaining Health); and
-                                                    Greatest Firepower (i.e.
-                                                    number of attack dice
-                                                    rolled) [Note: Use Golden
+                                                    The Empire will assign hits vs. Rebel Units with the
+                                                    following priority: Ion Cannon, Weakest Units
+                                                    (Remaining Health); and Greatest Firepower (i.e.
+                                                    number of attack dice rolled) [Note: Use Golden
                                                     Rule to break ties]
                                                 </li>
                                                 <li>
-                                                    THE DEATH STAR: The Empire
-                                                    will ONLY target the Rebel
-                                                    Base, a PRB, or a System
-                                                    with Rebel Loyalty and/or
+                                                    THE DEATH STAR: The Empire will ONLY target the Rebel
+                                                    Base, a PRB, or a System with Rebel Loyalty and/or
                                                     any Rebel Ground Units
                                                 </li>
                                             </ul>
@@ -1078,19 +1082,15 @@
                                 <div class="callout-empire">
                                     <h5>Unused Leaders</h5>
                                     <p>
-                                        In the unlikely event that their remain
-                                        any unused leaders, draw and undertake a
-                                        Mission/Leader from the Main Missions
-                                        Deck
+                                        In the unlikely event that their remain any unused leaders, draw and undertake a
+                                        Mission/Leader from the Main Missions Deck
                                     </p>
                                 </div>
                                 <div class="callout-empire">
                                     <h5>Maintenance</h5>
                                     <p>
-                                        At the end of the Command Phase, shuffle
-                                        both Mission Decks separately and place
-                                        any Project Cards acquired on top of the
-                                        Main Mission Deck
+                                        At the end of the Command Phase, shuffle both Mission Decks separately and place
+                                        any Project Cards acquired on top of the Main Mission Deck
                                     </p>
                                 </div>
                             </section>
@@ -1100,71 +1100,57 @@
                                 <div class="callout-both">
                                     <h5>Retrieve Leaders</h5>
                                     <p>
-                                        Each player takes all of his leaders
-                                        from the game board and returns them to
-                                        his leader pool. If a leader is still on
-                                        a mission card, it returns to the leader
-                                        pool, and the card returns to the
-                                        player’s hand
+                                        Each player takes all of his leaders from the game board and returns them to
+                                        his leader pool. If a leader is still on a mission card, it returns to the leader
+                                        pool, and the card returns to the player's hand
                                     </p>
                                 </div>
                                 <div class="callout-rebel">
                                     <h5>Draw Missions</h5>
                                     <p>
-                                        Rebel player draws two mission cards
-                                        and, if there are more than 10 cards in
+                                        Rebel player draws two mission cards and, if there are more than 10 cards in
                                         his hand, he discards down to 10 cards
                                     </p>
                                     <div class="callout-empire">
                                         <p>
-                                            The Empire does not draw Mission
-                                            cards during the Refresh Phase.
-                                            Empire missions are drawn during the
-                                            Assignment phase
+                                            The Empire does not draw Mission cards during the Refresh Phase.
+                                            Empire missions are drawn during the Assignment phase
                                         </p>
                                     </div>
                                 </div>
                                 <div class="callout-empire">
                                     <h5>Launch Probe Droids</h5>
                                     <p>
-                                        Reveal two Probe Cards, as per the
-                                        normal rules
+                                        Reveal two Probe Cards, as per the normal rules
                                     </p>
                                 </div>
                                 <div class="callout-rebel">
                                     <h5>Draw Objective</h5>
                                     <p>
-                                        The Rebel player draws one objective
-                                        card and adds it to his hand
+                                        The Rebel player draws one objective card and adds it to his hand
                                     </p>
                                 </div>
                                 <div class="callout">
                                     <h5>Advance Time Marker</h5>
                                     <p>
-                                        Advance the time marker one space along
-                                        the track. Then players recruit and/or
-                                        build if any icons are shown in the time
-                                        marker’s new space
+                                        Advance the time marker one space along the track. Then players recruit and/or
+                                        build if any icons are shown in the time marker's new space
                                     </p>
 
                                     <!-- Recruit -->
                                     <div class="callout-rebel">
                                         <h5>Rebels Recruit</h5>
                                         <p>
-                                            Rebel player draws two cards from
-                                            his action deck, chooses one leader
-                                            shown on either card, and places
-                                            that leader in his leader pool
+                                            Rebel player draws two cards from his action deck, chooses one leader
+                                            shown on either card, and places that leader in his leader pool
                                         </p>
                                     </div>
 
                                     <div class="callout-empire">
                                         <h5>Empire Recruit</h5>
                                         <p>
-                                            The Empire draws one Action Card,
-                                            randomly choosing if there are
-                                            available leaders. Draw again, if
-                                            necessary
+                                            The Empire draws one Action Card, randomly choosing if there are
+                                            available leaders. Draw again, if necessary
                                         </p>
                                     </div>
 
@@ -1172,8 +1158,7 @@
                                     <div class="callout-both">
                                         <h5>Build Units</h5>
                                         <p>
-                                            <strong>The Empire Builds before the
-                                                rebels</strong>
+                                            <strong>The Empire Builds before the rebels</strong>
                                         </p>
                                         <p>Follow normal building rules</p>
                                     </div>
@@ -1186,68 +1171,81 @@
                                     <div class="callout-empire">
                                         <h5>Empire Deploy</h5>
                                         <p>
-                                            <strong>The Empire Deploys before the
-                                                rebels</strong>
+                                            <strong>The Empire Deploys before the rebels</strong>
                                         </p>
                                         <p>
-                                            Follow the steps below to deploy
-                                            units, adhering to the max 2 units
+                                            Follow the steps below to deploy units, adhering to the max 2 units
                                             placed per system rule:
                                         </p>
                                         <ul id="deployflowchart">
                                             <li id="Base-Empiredeploy">
                                                 Locate the
-                                                <a class="link-danger text-medium" href="#" data-bs-toggle="modal" data-bs-target="#productionvalueguide">Highest
-                                                    Production Value</a>
+                                                <a
+                                                    class="link-danger text-medium"
+                                                    href="#"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#productionvalueguide">
+                                                    Highest Production Value
+                                                </a>
                                                 System
                                             </li>
                                             <div class="d-none variant" id="var-Empiredeploy">
                                                 <li>
-                                                    Locate the Empire system
-                                                    closest to (in priority
-                                                    order) the RB/PRB > Rebel
-                                                    system (tie going to
-                                                    production strength) >
-                                                    Imperial production strength
+                                                    Locate the Empire system closest to (in priority
+                                                    order) the RB/PRB > Rebel system (tie going to
+                                                    production strength) > Imperial production strength
                                                 </li>
-                                                <span class="material-icons">science</span>
+                                                <span
+                                                    class="aurekbesh"
+                                                    style="font-size: large"
+                                                    data-bs-toggle="tooltip"
+                                                    data-bs-placement="right"
+                                                    title="Deployment Variant: Priority">
+                                                    d
+                                                </span>
                                             </div>
                                             <li>
-                                                Find the Theater (Space or
-                                                Ground) with the fewest Units
+                                                Find the Theater (Space or Ground) with the fewest Units
                                             </li>
                                             <li>
-                                                Place the strongest available
-                                                unit in this Theater Note: If
-                                                the Empire doesn’t have a Unit
-                                                to place in-Theater, place the
-                                                strongest Built Unit of the
-                                                other Theater-type into its
-                                                Theater (if there are the same
-                                                number of Units in each Theater,
-                                                randomly choose between the
-                                                Theaters)
+                                                Place the strongest available unit in this Theater Note: If
+                                                the Empire doesn't have a Unit to place in-Theater, place the
+                                                strongest Built Unit of the other Theater-type into its
+                                                Theater (if there are the same number of Units in each Theater,
+                                                randomly choose between the Theaters)
                                             </li>
                                             <li id="Base-Empiredeploy">
                                                 Move to the next
-                                                <a class="link-danger text-medium" href="#" data-bs-toggle="modal" data-bs-target="#productionvalueguide">Highest
-                                                    Production Value</a>
-                                                System; Resolve from the
-                                                beginning of the flowchart,
-                                                wrapping back around to the
-                                                first
-                                                <a class="link-danger text-medium" href="#" data-bs-toggle="modal" data-bs-target="#productionvalueguide">Highest
-                                                    Production Value</a>
-                                                System, if necessary
+                                                <a
+                                                    class="link-danger text-medium"
+                                                    href="#"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#productionvalueguide">
+                                                    Highest Production Value
+                                                </a>
+                                                System; Resolve from the beginning of the flowchart,
+                                                wrapping back around to the first
+                                                <a
+                                                    class="link-danger text-medium"
+                                                    href="#"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#productionvalueguide">
+                                                    Highest Production Value
+                                                </a> System, if necessary
                                             </li>
                                             <div class="d-none variant" id="var-Empiredeploy">
                                                 <li class="d-none" id="var-Empiredeploy">
-                                                    Return to the beginning of
-                                                    the flowchart, wrapping back
-                                                    around to the first located
-                                                    system if necessary
+                                                    Return to the beginning of the flowchart, wrapping back
+                                                    around to the first located system if necessary
                                                 </li>
-                                                <span class="material-icons">science</span>
+                                                <span
+                                                    class="aurekbesh"
+                                                    style="font-size: large"
+                                                    data-bs-toggle="tooltip"
+                                                    data-bs-placement="right"
+                                                    title="Deployment Variant: Priority">
+                                                    d
+                                                </span>
                                             </div>
                                         </ul>
                                     </div>
@@ -1255,8 +1253,7 @@
                                     <div class="callout-rebel">
                                         <h5>Rebels Deploy</h5>
                                         <p>
-                                            Rebel player follows normal
-                                            deployment rules
+                                            Rebel player follows normal deployment rules
                                         </p>
                                     </div>
                                 </div>
@@ -1356,16 +1353,11 @@
                                         <label for="planet-check-yavin" id="yavin" class="planetlabel"></label>
                                     </ul>
                                     <p class="paraseparator fs-7 p-2">
-                                        The Rebel Base will be revealed only
-                                        after the Empire has obtained the Probe
-                                        Cards for the other 7 Remote Systems OR
-                                        when the Empire has any Ground Units in
-                                        that System
+                                        The Rebel Base will be revealed only after the Empire has obtained the Probe
+                                        Cards for the other 7 Remote Systems OR  when the Empire has any Ground Units in that System
                                     </p>
                                     <p class="fs-7 px-2">
-                                        Empire movement and deployment will
-                                        change priority when Rebel Base is
-                                        revealed
+                                        Empire movement and deployment will change priority when Rebel Base is revealed
                                     </p>
                                     <div class="modal-footer">
                                         <div>Number of scanned systems:</div>
@@ -1445,21 +1437,16 @@
                                         Catch Them by Surprise
                                     </div>
                                     <div class="col">
-                                        System with at least 1 adjacent Imperial
-                                        unit. Follow movement rules. Priorities:
-                                        1. RB, 2. PRB, 3. Most Productive Rebel
-                                        System
+                                        System with at least 1 adjacent Imperial unit. Follow movement rules. Priorities:
+                                        1. RB, 2. PRB, 3. Most Productive Rebel System
                                     </div>
                                 </div>
                                 <div class="row cardlist" title="Local Rumors">
                                     <div class="col-4">Local Rumors</div>
                                     <div class="col">
-                                        Rebel Base revealed: keep this card and
-                                        use as soon as a new Base ist
-                                        established. Otherwise: Random Region
-                                        with PRB. If successful the Empire gets
-                                        the Probe Card of that Region´s Remote
-                                        System
+                                        Rebel Base revealed: keep this card and use as soon as a new Base ist
+                                        established. Otherwise: Random Region with PRB. If successful the Empire gets
+                                        the Probe Card of that Region's Remote System
                                     </div>
                                 </div>
                                 <div class="row cardlist" title="Proceeding as Planned">
@@ -1467,25 +1454,21 @@
                                         Proceeding as Planned
                                     </div>
                                     <div class="col">
-                                        Draw Project Cards until an immediately
-                                        achievable Mission is revealed
+                                        Draw Project Cards until an immediately achievable Mission is revealed
                                     </div>
                                 </div>
                                 <div class="row cardlist" title="Public Support">
                                     <div class="col-4">Public Support</div>
                                     <div class="col">
-                                        Rebel Base revealed: closest System to
-                                        RB. Otherwise: Most productive Imperial
+                                        Rebel Base revealed: closest System to RB. Otherwise: Most productive Imperial
                                         System.
                                     </div>
                                 </div>
                                 <div class="row cardlist" title="Scouting Mission">
                                     <div class="col-4">Scouting Mission</div>
                                     <div class="col">
-                                        Rebel Base revealed: choose RB.
-                                        Otherwise: Most Productive Rebel System.
-                                        Choose Tie Fighters furthest away from
-                                        target System
+                                        Rebel Base revealed: choose RB. Otherwise: Most Productive Rebel System.
+                                        Choose Tie Fighters furthest away from target System
                                     </div>
                                 </div>
                                 <div class="row cardlist" title="According to My Design">
@@ -1502,7 +1485,7 @@
                                     <div class="col-4">Good Intel</div>
                                     <div class="col">
                                         Draw only 1 card per Theater at the
-                                        start of Combat (ignore your Leader´s
+                                        start of Combat (ignore your Leader's
                                         Tactics Values)
                                     </div>
                                 </div>
@@ -1517,8 +1500,7 @@
                                         More Dangerous Than You Realize
                                     </div>
                                     <div class="col">
-                                        Add 3 to a randomly selected Tactics
-                                        value of the Imperial Leader leading
+                                        Add 3 to a randomly selected Tactics value of the Imperial Leader leading
                                         this Combat
                                     </div>
                                 </div>
@@ -1531,22 +1513,19 @@
                                         Target the Generator
                                     </div>
                                     <div class="col">
-                                        Only use on combat in a System with
-                                        structures. Priority: Ion Cannon
+                                        Only use on combat in a System with structures. Priority: Ion Cannon
                                     </div>
                                 </div>
                                 <div class="row cardlist" title="Blindside">
                                     <div class="col-4">Blindside</div>
                                     <div class="col">
-                                        If available use one of these Leaders on
-                                        the next achievable Mission revealed
+                                        If available use one of these Leaders on the next achievable Mission revealed
                                     </div>
                                 </div>
                                 <div class="row cardlist" title="It Is Your Destiny">
                                     <div class="col-4">It Is Your Destiny</div>
                                     <div class="col">
-                                        Keep this card and use as soon as a
-                                        Leader is rescued
+                                        Keep this card and use as soon as a Leader is rescued
                                     </div>
                                 </div>
                                 <div class="row cardlist" title="Independent Operation">
@@ -1554,25 +1533,21 @@
                                         Independent Operation
                                     </div>
                                     <div class="col">
-                                        Rebel Base revealed: Empire moves units
-                                        to closest Imperial System to RB.
-                                        Otherwise: Empire moves units to most
-                                        productive Imperial System
+                                        Rebel Base revealed: Empire moves units to closest Imperial System to RB.
+                                        Otherwise: Empire moves units to most productive Imperial System
                                     </div>
                                 </div>
-                                <div class="row cardlist" title="It´s a Trap">
-                                    <div class="col-4">It´s a Trap</div>
+                                <div class="row cardlist" title="It's a Trap">
+                                    <div class="col-4">It's a Trap</div>
                                     <div class="col">
-                                        Imperial Leader will not use his space
-                                        tactics during the first round (no
+                                        Imperial Leader will not use his space tactics during the first round (no
                                         forced re-rolls)
                                     </div>
                                 </div>
                                 <div class="row cardlist" title="Heart Of The Empire">
                                     <div class="col-4">Heart Of The Empire</div>
                                     <div class="col">
-                                        Remove this card from the game during
-                                        setup
+                                        Remove this card from the game during setup
                                     </div>
                                 </div>
                                 <div class="row cardlist" title="Capture Rebel Operative">
@@ -1592,18 +1567,15 @@
                                         Research And Development
                                     </div>
                                     <div class="col">
-                                        Priority: 1. Sabotaged System, 2. Most
-                                        productive System. Choose second option.
-                                        Place Project card on top of the Main
-                                        Missions deck at the end of the Command
+                                        Priority: 1. Sabotaged System, 2. Most productive System. Choose second option.
+                                        Place Project card on top of the Main Missions deck at the end of the Command
                                         Phase
                                     </div>
                                 </div>
                                 <div class="row cardlist" title="Rule by Fear">
                                     <div class="col-4">Rule by Fear</div>
                                     <div class="col">
-                                        Priority: 1. Subjugated System 2. Most
-                                        productive System
+                                        Priority: 1. Subjugated System 2. Most productive System
                                     </div>
                                 </div>
                                 <div class="row cardlist" title="Address Delays">
@@ -1646,36 +1618,29 @@
                                         Fear Will Keep Them…
                                     </div>
                                     <div class="col">
-                                        Random System with Death Star or Super
-                                        Star Destroyer. Gain loyalty (Priority):
-                                        1. Most productive Rebel System, 2.
-                                        Subjugated System, 3. Most productive
+                                        Random System with Death Star or Super Star Destroyer. Gain loyalty (Priority):
+                                        1. Most productive Rebel System, 2. Subjugated System, 3. Most productive
                                         System
                                     </div>
                                 </div>
                                 <div class="row cardlist" title="Homing Beacon">
                                     <div class="col-4">Homing Beacon</div>
                                     <div class="col">
-                                        Choose strongest captured Leader. The
-                                        Empire gets the Probe Cards of all
+                                        Choose strongest captured Leader. The Empire gets the Probe Cards of all
                                         Remote System not in that Region
                                     </div>
                                 </div>
                                 <div class="row cardlist" title="Hunt Them Down">
                                     <div class="col-4">Hunt Them Down</div>
                                     <div class="col">
-                                        Rebel Base revealed: choose RB.
-                                        Otherwise: Most productive System with
-                                        Rebel Units. Destroy strongest unit from
-                                        strongest Theater
+                                        Rebel Base revealed: choose RB. Otherwise: Most productive System with
+                                        Rebel Units. Destroy strongest unit from strongest Theater
                                     </div>
                                 </div>
                                 <div class="row cardlist" title="Imperial Propaganda">
                                     <div class="col-4">Imperial Propaganda</div>
                                     <div class="col">
-                                        1. System in Region with most Rebel
-                                        Systems. 2. Highest combined production
-                                        value.
+                                        1. System in Region with most Rebel Systems. 2. Highest combined production value.
                                     </div>
                                 </div>
                                 <div class="row cardlist" title="Intercept Transmission">
@@ -1689,27 +1654,21 @@
                                 <div class="row cardlist" title="Interrogation">
                                     <div class="col-4">Interrogation</div>
                                     <div class="col">
-                                        Choose strongest captured Leader.
-                                        Discard 1 random Objective card from
-                                        hand
+                                        Choose strongest captured Leader. Discard 1 random Objective card from hand
                                     </div>
                                 </div>
                                 <div class="row cardlist" title="Interrogation Droid">
                                     <div class="col-4">Interrogation Droid</div>
                                     <div class="col">
-                                        Choose strongest captured Leader. Empire
-                                        gets all except 3 Remote planet Probe
-                                        cards of your choice. (If there are only
-                                        3 or less in the Probe Deck: no effect).
+                                        Choose strongest captured Leader. Empire gets all except 3 Remote planet Probe
+                                        cards of your choice. (If there are only 3 or less in the Probe Deck: no effect).
                                     </div>
                                 </div>
                                 <div class="row cardlist" title="Long-Range Probe">
                                     <div class="col-4">Long-Range Probe</div>
                                     <div class="col">
-                                        PRB furthest away from Imperial Systems.
-                                        If not RB: The Empire gets that System´s
-                                        Probe Card. If RB: The Empire gets the
-                                        Probe Cards of all other Remote Systems
+                                        PRB furthest away from Imperial Systems. If not RB: The Empire gets that System's
+                                        Probe Card. If RB: The Empire gets the Probe Cards of all other Remote Systems
                                     </div>
                                 </div>
                                 <div class="row cardlist" title="Lure Of The Dark Side">
@@ -1723,10 +1682,8 @@
                                 <div class="row cardlist" title="Planetary Conquest">
                                     <div class="col-4">Planetary Conquest</div>
                                     <div class="col">
-                                        Rebel Base revealed: choose RB.
-                                        Otherwise: Most productive Rebel System.
-                                        Move units from Systems furthest away
-                                        from RB
+                                        Rebel Base revealed: choose RB. Otherwise: Most productive Rebel System.
+                                        Move units from Systems furthest away from RB
                                     </div>
                                 </div>
                                 <div class="row cardlist" title="Probe Droid Initiative">
@@ -1738,8 +1695,7 @@
                                 <div class="row cardlist" title="Retrieve The Plans">
                                     <div class="col-4">Retrieve The Plans</div>
                                     <div class="col">
-                                        Choose strongest captured Leader. Remove
-                                        highest (most reputation) Objective card
+                                        Choose strongest captured Leader. Remove highest (most reputation) Objective card
                                         from hand to bottom of deck
                                     </div>
                                 </div>
@@ -1748,8 +1704,7 @@
                                         Secret Weapons Research
                                     </div>
                                     <div class="col">
-                                        Most productive Imperial System. Place
-                                        Project card on top of the Main Missions
+                                        Most productive Imperial System. Place Project card on top of the Main Missions
                                         deck at the end of the Command Phase.
                                     </div>
                                 </div>
@@ -1780,17 +1735,14 @@
                                 <div class="row cardlist" title="Oversee Project">
                                     <div class="col-4">Oversee Project</div>
                                     <div class="col">
-                                        Rebel Base revealed: closest System to
-                                        RB. Otherwise: Most productive Imperial
-                                        System. Place strongest unit. Prefer
-                                        space 2
+                                        Rebel Base revealed: closest System to RB. Otherwise: Most productive Imperial
+                                        System. Place strongest unit. Prefer space 2
                                     </div>
                                 </div>
                                 <div class="row cardlist" title="Superlaser Online">
                                     <div class="col-4">Superlaser Online</div>
                                     <div class="col">
-                                        Priority: 1. RB, 2. PRB, 3. Rebel
-                                        System, 4. none - skip action
+                                        Priority: 1. RB, 2. PRB, 3. Rebel System, 4. none - skip action
                                     </div>
                                 </div>
                             </div>
@@ -1979,10 +1931,8 @@
                             <p class="text-small">
                                 Production value is equal to the
                                 <a class="link-danger text-medium" href="#" data-bs-toggle="modal" data-bs-target="#strengthguide">Strength</a>
-                                of all Units a system may produce. Count all
-                                production icons, including Subjugated Systems
-                                (e.g., the Mon Calamari System’s has a
-                                Production Value of 4). Sabotaged Systems have a
+                                of all Units a system may produce. Count all production icons, including Subjugated Systems
+                                (e.g., the Mon Calamari System's has a Production Value of 4). Sabotaged Systems have a
                                 Production Value of 0
                             </p>
                         </div>
@@ -2002,7 +1952,7 @@
                         </div>
                         <div class="modal-body text-small">
                             <ul style="list-style-type: none">
-                                Strength factors into the Empire’s
+                                Strength factors into the Empire's
                                 decision-making:
                                 <p></p>
                                 <li>
@@ -2012,7 +1962,7 @@
                                             d="M7.022 1.566a1.13 1.13 0 0 1 1.96 0l6.857 11.667c.457.778-.092 1.767-.98 1.767H1.144c-.889 0-1.437-.99-.98-1.767L7.022 1.566z" />
                                     </svg>
                                     <strong class="maincolour">Units: 1 STRENGTH</strong>
-                                    (X-Wings, TIE Fighters, both sides’
+                                    (X-Wings, TIE Fighters, both sides'
                                     Troopers)
                                 </li>
                                 <li>
@@ -2038,7 +1988,7 @@
                                             d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zM6 7.5h4a.5.5 0 0 1 0" />
                                     </svg>
                                     <strong class="maincolour">Units: 4 STRENGTH</strong>
-                                    (The Empire’s Super Star Destroyers and
+                                    (The Empire's Super Star Destroyers and
                                     Death Stars)
                                 </li>
                             </ul>

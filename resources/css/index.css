@@ -11472,6 +11472,20 @@ fieldset:disabled .btn {
   src: url("../font/Goldman-Bold.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: 'RebellionIcons';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../font/SWRebellionIcons.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Aurekbesh';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../font/Aurek-Besh.otf") format("truetype");
+}
+
 /* Bootstrap modifiers */
 .sticky-top {
   top: 0.5em;
@@ -11485,6 +11499,19 @@ fieldset:disabled .btn {
 .font-regular {
   font-family: "Goldman", serif;
   font-weight: 400;
+}
+
+.symbol {
+  font-family: "RebellionIcons";
+  font-weight: 400;
+  font-size: medium;
+}
+
+.aurekbesh {
+  font-family: "Aurekbesh";
+  font-weight: 400;
+  font-size: medium;
+  float: right;
 }
 
 html,
@@ -11582,7 +11609,7 @@ a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 20px 0 0;
+  padding: 0;
 }
 
 .planetlabel:hover {
@@ -12028,6 +12055,11 @@ input[id^=round]:disabled + label {
 .icon-medium {
   font-size: 29px;
   font-size: 1.8125rem;
+}
+
+.icon-big {
+  font-size: 32px;
+  font-size: 2rem;
 }
 
 @media only screen and (min-width: 768px) {
