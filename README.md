@@ -3,7 +3,7 @@ Solo variant instructions for Star War Rebellion
 
 Public link - https://vortilion.github.io/SWR_SoloVariant/
 
-Based on "Solitaire Variant - The Empire Attacks" by Dale Buonocore (BGG: https://boardgamegeek.com/thread/1697801/solitaire-variant-empire-attacks-revised-version-1)
+Based on "Solitaire Variant - The Empire Attacks" by Dale Buonocore ([BGG-Thread](https://boardgamegeek.com/thread/1697801/solitaire-variant-empire-attacks-revised-version-1))
 
 --------
 Original implementation by [OZ10](https://boardgamegeek.com/user/OZ10)  
