@@ -83,7 +83,7 @@ function setupRoundMarkers() {
 }
 
 const GetSettingsByValue = (val, includes = false) => {
-    let settings = new Array();
+    let settings = [];
     for (let [key, value] of Object.entries(localStorage)) {
         if (includes && value.includes(val)) {
             settings.push(key + "," + value);
@@ -95,7 +95,7 @@ const GetSettingsByValue = (val, includes = false) => {
 };
 
 const GetSettingsByKey = (val, includes = false) => {
-    let settings = new Array();
+    let settings = [];
     for (let [key, value] of Object.entries(localStorage)) {
         if (includes && key.includes(val)) {
             settings.push(key + "," + value);
