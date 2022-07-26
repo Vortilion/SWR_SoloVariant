@@ -629,3 +629,9 @@ input[id^=round]:disabled+label {
     @extend .offcanvas;
     width: 120px;
 }
+
+.updown {
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Safari */
+    transform: rotate(180deg);
+}
