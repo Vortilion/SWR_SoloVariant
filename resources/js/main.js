@@ -468,6 +468,15 @@ function searchCardList() {
     });
 }
 
+function expandClick(item) {
+    var expandBtnDiv = item.parentElement;
+    if (expandBtnDiv.classList.contains("updown")) {
+        expandBtnDiv.classList.remove("updown");
+    } else {
+        expandBtnDiv.classList.add("updown");
+    }
+}
+
 function loadVariantSettings() {
     let settings = GetSettingsByKey("chk", true);
     settings.forEach((setting) => {
